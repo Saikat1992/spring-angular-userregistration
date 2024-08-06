@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>javatechie-session1</artifactId>
+	<artifactId>spring-boot-docker</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>javatechie-session1</name>
-	<description>javatechie-session1</description>
+	<name>spring-boot-docker</name>
+	<description>Spring Boot Docker</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -64,6 +64,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+		<finalName>spring-boot-docker</finalName>
 	</build>
 
 </project>
