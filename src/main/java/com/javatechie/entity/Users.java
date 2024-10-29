@@ -27,6 +27,47 @@ public class Users {
 	
 	@Column(name="name", nullable=false)
 	private String name;
+	
+	@Column(name="password", nullable=false)
+	private String password;
+	
+	/*
+	 * public Users(String domain, String email, String experience, String name) {
+	 * //this.id= id; this.domain= domain; this.email= email; this.experience=
+	 * experience; this.name= name; }
+	 */
+	
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public Users(int id,String domain, String email, String experience, String name, String password) {
+		this.id= id;
+		this.domain= domain;
+		this.email= email;
+		this.experience= experience;
+		this.name= name;
+		this.password= password;
+	}
+	
+	public Users(){
+		
+	}
+	
+	
+	
+
+	
+
+	@Override
+	public String toString() {
+		return "Users [id=" + id + ", domain=" + domain + ", email=" + email + ", experience=" + experience + ", name="
+				+ name + ", password=" + password + "]";
+	}
 
 	public int getId() {
 		return id;
