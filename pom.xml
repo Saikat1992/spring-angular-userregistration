@@ -10,7 +10,7 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.javatechie</groupId>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<artifactId>spring-boot-docker</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>spring-boot-docker</name>
@@ -83,6 +83,28 @@
 			<version>0.11.5</version>
 			<scope>runtime</scope>
 		</dependency>
+		<!--
+		https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-actuator -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.36</version>
+			<scope>provided</scope>
+		</dependency>
+
+
+		<!--
+		https://mvnrepository.com/artifact/io.micrometer/micrometer-registry-prometheus -->
+		<dependency>
+			<groupId>io.micrometer</groupId>
+			<artifactId>micrometer-registry-prometheus</artifactId>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -92,7 +114,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-		<!--<finalName>spring-boot-docker</finalName>-->
+		<finalName>userregdocker</finalName>
 	</build>
 
 </project>

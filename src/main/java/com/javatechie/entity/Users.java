@@ -1,17 +1,22 @@
 package com.javatechie.entity;
 
+import org.antlr.v4.runtime.misc.NotNull;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import lombok.Data;
 
 @Entity
+@Data
 @Table(schema = "demo", name="user_reg_tbl")
 public class Users {
 	
 	@Id
+	@NotNull
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name="id", unique = true, nullable=false)
 	private int id;

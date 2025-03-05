@@ -1,4 +1,5 @@
-FROM openjdk:17-jdk
-EXPOSE 10001
-ADD target/spring-boot-docker.jar spring-boot-docker.jar
-ENTRYPOINT ["java","-jar", "/spring-boot-docker.jar"]
+FROM openjdk:17
+ENV PORT 9092
+EXPOSE 9092
+ADD target/userregdocker.jar userregdocker.jar
+ENTRYPOINT ["java","-jar", "/userregdocker.jar"]
